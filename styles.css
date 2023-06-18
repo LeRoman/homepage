@@ -12,8 +12,8 @@ body {
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --border-color: #2117d745;
+  --text-decoration-color: #0e0af4;
 }
 
 .container {
@@ -26,6 +26,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.fh2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .fv {
@@ -75,8 +80,6 @@ body {
 .contact-info__header {
   color: var(--primary-text-color);
   margin-bottom: 15px;
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
 }
 
 .contact-info__sub-header {
@@ -87,7 +90,7 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contact-info__block--center {
@@ -123,13 +126,19 @@ body {
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
 }
-
+.rounded-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: rgba(26, 9, 9, 0.4) 0px 0px 40px;
+  padding: 0.15em;
+}
 .intro {
   display: flex;
   justify-content: start;
@@ -187,8 +196,6 @@ body {
 
 .experiences__company-header-name {
   color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
   text-align: left;
   margin-bottom: 20px;
 }
